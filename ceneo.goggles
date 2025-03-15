@@ -1,0 +1,13 @@
+! name: Ceneo Product Booster
+! description: Boosts Ceneo product pages in search results
+! public: false
+! author: CheaplyBot
+
+# Boost Ceneo domain
+$boost=3,site=ceneo.pl
+
+# Extra boost for product pages (which typically contain numeric IDs)
+$boost=5,site=ceneo.pl/[0-9]+
+
+# Slightly downrank category pages
+$downrank=1,site=ceneo.pl/kategoria/
